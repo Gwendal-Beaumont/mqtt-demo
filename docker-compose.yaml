@@ -1,0 +1,19 @@
+version: "3.8"
+
+services:
+  mqtt:
+    image: eclipse-mosquitto:2
+    ports:
+      - "1883:1883"
+
+  publisher:
+    build:
+      context: ./publisher
+    depends_on:
+      - mqtt
+
+  subscriber:
+    build:
+      context: ./subscriber
+    depends_on:
+      - mqtt
