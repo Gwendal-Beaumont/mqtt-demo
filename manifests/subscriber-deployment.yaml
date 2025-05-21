@@ -14,4 +14,4 @@ spec:
     spec:
       containers:
       - name: subscriber
-        image: your-dockerhub/mqtt-subscriber:latest
+        image: gwendalb/mqtt-subscriber:latest

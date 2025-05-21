@@ -14,4 +14,4 @@ spec:
     spec:
       containers:
       - name: publisher
-        image: your-dockerhub/mqtt-publisher:latest
+        image: gwendalb/mqtt-publisher:latest
